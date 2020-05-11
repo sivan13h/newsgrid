@@ -1,0 +1,48 @@
+.socials{
+    display: none;
+}
+
+.navbar{
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+}
+
+.pages, .logo{
+    justify-self: center;
+}
+
+.logo{
+    font-size: 1.5rem;
+}
+
+.logo i {
+    font-size: 2.5rem;
+}
+.navbar ul li a{
+    padding: 0.5rem
+}
+
+.mainGrid{
+    grid-template-columns: repeat(2,1fr);
+}
+
+.item1, .item7{
+    grid-template-columns: 1fr;
+    grid-column: 1;
+}
+
+@media(max-width:600px){
+    .mainGrid, .footer-flex{
+        grid-template-columns: 1fr;
+    }
+
+    .flex-item:first-child, .flex-item:nth-child(2){
+        border-bottom: 1px #555 dotted;
+        padding-bottom:1rem;
+    }
+
+    .about-grid{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
